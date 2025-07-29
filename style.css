@@ -1,0 +1,254 @@
+/* Styles généraux pour l'ambiance "coucher de soleil PNL" */
+body {
+    /* Dégradé de couleurs pour simuler un coucher de soleil */
+    background: linear-gradient(to top right, #FFDAB9, #FFA07A, #FF7F50); /* Du rose pêche au corail */
+    min-height: 100vh; /* Pour que le dégradé couvre toute la hauteur de la page */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Police de base, vous pouvez en choisir une plus "PNL" plus tard */
+    color: #333333; /* Couleur de texte sombre mais pas noir pur */
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Pour un défilement doux vers les sections */
+}
+
+/* Écran initial avec le bouton "BilAllahi mon frère appuie" */
+.initial-screen {
+    display: flex; /* Utilise flexbox pour centrer */
+    flex-direction: column; /* Alignement vertical */
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    text-align: center;
+    color: white; /* Texte blanc sur le dégradé */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombre pour faire ressortir le texte */
+    padding: 20px;
+}
+
+.initial-screen h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.initial-screen p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    background-color: #FFA07A; /* Orange saumon pour le bouton */
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px; /* Bouton arrondi */
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#startButton:hover {
+    background-color: #FF6347; /* Rouge tomate au survol pour un effet plus vif */
+    transform: translateY(-3px); /* Petit effet de soulèvement */
+}
+
+/* Styles pour le contenu principal après le clic sur le bouton de démarrage */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.2); /* Fond semi-transparent pour le header */
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent pour la navigation */
+    padding: 10px 0;
+    text-align: center;
+    position: sticky; /* La navigation reste en haut lors du défilement */
+    top: 0;
+    z-index: 1000; /* Assure que la nav est au-dessus des autres éléments */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Pour aligner les éléments horizontalement */
+    justify-content: center;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'écran est petit */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Effet de transition au survol */
+    padding: 5px 0;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Jaune doré au survol */
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent pour le contenu */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #eee; /* Petite séparation entre les sections */
+}
+
+section:last-of-type {
+    border-bottom: none; /* Pas de séparation pour la dernière section */
+}
+
+section h2 {
+    color: #FF7F50; /* Titres de section en corail */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style pour la section de la lettre */
+.letter-section {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 30px;
+    background-color: #fffaf0; /* Un fond plus doux pour la lettre */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px; /* Bords légèrement arrondis pour les images */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styles pour les sections PNL et les interactions */
+.pnl-track-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Fond légèrement plus opaque */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.pnl-track-container h3 {
+    color: #FF7F50; /* Couleur corail pour les titres de chansons */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+audio {
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
+    display: block;
+}
+
+.reveal-button {
+    background-color: #FFA07A; /* Orange saumon pour le bouton */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px; /* Bouton arrondi */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.reveal-button:hover {
+    background-color: #FF6347; /* Rouge tomate au survol pour un effet plus vif */
+    transform: translateY(-2px); /* Petit effet de soulèvement */
+}
+
+.hidden-lyrics {
+    display: none; /* TRÈS IMPORTANT : Masque le contenu par défaut */
+    margin-top: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond plus clair pour les paroles révélées */
+    border-radius: 8px;
+    border: 1px solid #FFDAB9; /* Bordure douce */
+    text-align: left;
+    color: #333;
+    animation: fadeIn 0.8s ease-out forwards; /* Animation d'apparition */
+}
+
+.hidden-lyrics blockquote {
+    font-style: italic;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-left: 4px solid #FFA07A; /* Bordure pour les citations */
+    color: #555;
+}
+
+.joke-explanation {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Animation pour l'apparition des paroles */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Nouveau style pour le bouton qui joue votre voix */
+.play-my-voice-button {
+    background-color: #FFD700; /* Jaune doré */
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.play-my-voice-button:hover {
+    background-color: #FFDD00; /* Jaune plus vif au survol */
+    transform: translateY(-1px);
+}
