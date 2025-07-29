@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Toi : Notre Univers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="initial-screen">
+        <h1>Ce site est pour toi</h1>
+        <p>Mets tes écouteurs. Clique sur "BilAllahi mon frère appuie" quand tu es prête.</p>
+        <button id="startButton">BilAllahi mon frère appuie</button>
+    </div>
+
+    <div class="main-content" style="display: none;">
+        <header>
+            <h1>Bienvenue dans Notre Univers</h1>
+            <p>Un espace créé juste pour toi, avec tout ce qu'on aime.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#accueil-site">Accueil</a></li>
+                <li><a href="#messages">Tes Mots Doux</a></li>
+                <li><a href="#pnl">Notre Vibe PNL</a></li>
+                <li><a href="#souvenirs">Nos Souvenirs</a></li>
+                <li><a href="#blagues">Nos Private Jokes</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="accueil-site">
+                <h2>Notre Histoire en Mots et en Images</h2>
+                <p>Ici, je veux te rappeler à quel point tu comptes pour moi et à quel point j'aime chaque instant passé avec toi. Ce site est une petite partie de mon cœur, dédiée à notre amour.</p>
+                <img src="placeholder_nous.jpg" alt="Toi et Moi">
+            </section>
+
+            <section id="messages" class="letter-section">
+                <h2>Lettre pour toi</h2>
+                <p>
+                    Je ne savais pas comment te dire tout ce que je ressens... alors j’ai créé ça.<br><br>
+                    Ce n’est pas grand-chose, mais c’est sincère. Chaque mot ici est pour toi, chaque pensée aussi.<br>
+                    Même si les choses ne sont plus comme avant, mon amour pour toi lui ne changera jamais.<br><br>
+                    Merci pour ce qu’on a vécu ensemble chaton je t'aime, t'es ma vie, mon tout je t'aime tellement,
+                    tu serais choqué. Ton ex qui t'aimes et qui veut te récupérer.
+                </p>
+            </section>
+
+            <section id="pnl">
+                <h2>Notre Vibe PNL</h2>
+                <p>Ici, on mettra des extraits de nos sons préférés, des paroles qui nous parlent.</p>
+
+                <div class="pnl-track-container">
+                    <h3>Naha - PNL (Version revisitée)</h3>
+                    <audio controls>
+                        <source src="audio/naha.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <br>
+                    <button class="reveal-button" data-target="naha-lyrics">Découvre les paroles secrètes</button>
+                    <div id="naha-lyrics" class="hidden-lyrics">
+                        <p><strong>Paroles originales (extrait) :</strong></p>
+                        <blockquote>
+                            <p>Igo sur mon cul du rain-té<br>
+                            Je suis pas un rappeur sans vocodeur, je suis claqué</p>
+                        </blockquote>
+                        <p><strong>Notre version (notre private joke) :</strong></p>
+                        <blockquote>
+                            <p>Igo, je sors mon cul du rain-té<br>
+                            Je suis pas un homme beau.<br>
+                            Sans ma Ela, je suis claqué.</p>
+                        </blockquote>
+                        <audio id="audio-ma-voix-ela" src="audio/ma_voix_ela_claque.mp3" preload="auto"></audio>
+                        <button class="play-my-voice-button" data-audio="audio-ma-voix-ela">Écoute ma version !</button>
+                        <p class="joke-explanation"><em>(Rappelle-toi le jeu de mot "homme beau" / "bonhomme" 😉)</em></p>
+                    </div>
+                </div>
+
+                <div class="pnl-track-container">
+                    <h3>Onizuka - PNL (Notre clin d'œil)</h3>
+                    <audio controls>
+                        <source src="audio/onizuka.mp3" type="audio/mpeg">
+                        Votre navigateur ne supporte pas l'élément audio.
+                    </audio>
+                    <br>
+                    <button class="reveal-button" data-target="onizuka-lyrics">Un autre secret ?</button>
+                    <div id="onizuka-lyrics" class="hidden-lyrics">
+                        <p><strong>Paroles originales (extrait) :</strong></p>
+                        <blockquote>
+                            <p>Fils, c'était la plus bonne en shortie dentelle</p>
+                        </blockquote>
+                        <p><strong>Notre version (notre private joke) :</strong></p>
+                        <blockquote>
+                            <p>Je kiffe c'était la plus bonne en Vans grosse languette.</p>
+                        </blockquote>
+                        <audio id="audio-ma-voix-vans" src="audio/ma_voix_vans_languette.mp3" preload="auto"></audio>
+                        <button class="play-my-voice-button" data-audio="audio-ma-voix-vans">Écoute ma version !</button>
+                        <p class="joke-explanation"><em>(Tu te souviens de cette paire de Vans ? 😉)</em></p>
+                    </div>
+                </div>
+                </section>
+
+            <section id="souvenirs">
+                <h2>Nos Souvenirs en Images et Vidéos</h2>
+                <p>Une collection de nos moments les plus drôles, les plus beaux.</p>
+                <img src="placeholder_souvenir1.jpg" alt="Un de nos souvenirs">
+            </section>
+
+            <section id="blagues">
+                <h2>Nos Private Jokes</h2>
+                <p>Parce que nos rires sont les meilleurs.</p>
+                </section>
+        </main>
+
+        <footer>
+            <p>Fait avec tout mon amour.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
